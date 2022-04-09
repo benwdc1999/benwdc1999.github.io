@@ -1,0 +1,57 @@
+body{
+  background-color: Black;
+
+
+
+}
+hr{
+  border-color: CadetBlue;
+  border-style: none;
+  border-top-style: dashed;
+  border-width: 10px;
+
+  width: 20%;
+}
+
+h1{
+  color: PaleGreen;
+}
+
+h2{
+  color: PaleGreen;
+}
+
+p{
+  font-size: 14pt;
+  color: MediumSpringGreen;
+  line-height: 200%;
+}
+
+a:link {
+  text-decoration: none;
+  color: MediumSpringGreen;
+}
+
+
+a:visited {
+  text-decoration: none;
+  color: MediumSpringGreen;
+
+}
+
+
+a:hover { text-decoration: none; }
+
+
+a:active { text-decoration: none; }
+
+table{
+  line-height: 200%;
+  font-size: 14pt;
+  color: MediumSpringGreen;
+}
+
+ul{
+  color: MediumSpringGreen;
+  list-style-type: square;
+}
