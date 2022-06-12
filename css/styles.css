@@ -1,0 +1,59 @@
+body {
+  background-color: cyan;
+  text-align: center;
+  font-family: Fascinate;
+}
+
+h1 {
+  color: #47B5FF;
+  font-size: 60px;
+  margin-bottom: 0;
+
+}
+
+p {
+  color: #3A5BA0;
+}
+
+h2 {
+  color: #47B5FF;
+}
+
+table{
+  margin: 25px auto 25px auto;
+}
+
+ul {
+  color: #3A5BA0;
+  margin: 25px auto 25px auto;
+}
+
+.me{
+  height: 250px;
+}
+
+
+.cloud{
+  position: absolute;
+  right: 100px;
+  top: 100px;
+}
+
+
+.lowercloud{
+  position: absolute;
+  left: 200px;
+  bottom: 300px;
+}
+
+.lfix{
+  width: 300px;
+  height: 300px;
+  margin: 0 auto;
+}
+
+.mountain{
+
+position: relative;
+bottom: 200px;
+}
