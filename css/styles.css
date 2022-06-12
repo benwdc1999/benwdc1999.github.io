@@ -26,6 +26,7 @@ table{
 ul {
   color: #3A5BA0;
   margin: 25px auto 25px auto;
+  list-style-type: square;
 }
 
 .me{
