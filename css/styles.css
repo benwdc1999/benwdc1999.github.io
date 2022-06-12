@@ -31,6 +31,10 @@ ul {
 
 .me{
   height: 250px;
+  border-radius: 100%;
+  float: left;
+  margin-top: 50px;
+  margin-right: 0;
 }
 
 
@@ -55,6 +59,19 @@ ul {
 
 .mountain{
 
-position: relative;
-bottom: 200px;
+
+}
+
+.start{
+  text-align: center;
+  display: inline-block;
+  width: 570px;
+  margin: 0 auto;
+
+}
+
+.starttext{
+display: inline-block;
+width: 400px;
+margin-bottom: 50px;
 }
