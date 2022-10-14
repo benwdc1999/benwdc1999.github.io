@@ -1,25 +1,31 @@
 body{
-  background-color: DimGray;
-}
-
-hr{
-  border-style: none;
-  border-top: 5px dotted white;
-  width: 10%;
-}
-
-h1{
-  color: Cyan;
-}
-
-h3{
-  color: #66BFBF;
+  background-color: PowderBlue;
+  text-align: center;
 }
 
 img{
-  border-radius: 50%
+  height: 300px;
+
 }
 
-img:hover{
-  height: 250px;
+
+h1{
+  font-size: 6rem;
+  color: seagreen;
+  text-align: center;
+}
+
+
+
+.cake{
+  margin: 50px 500px;;
+
+}
+
+.carousel{
+  padding: 200px;
+}
+
+.top-container{
+  margin-bottom: 50px;
 }
