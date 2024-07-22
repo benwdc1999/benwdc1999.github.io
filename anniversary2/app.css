@@ -1,0 +1,23 @@
+body {
+  background-color: cyan;
+}
+
+h1,
+h2 {
+  font-family: "Shrikhand", serif;
+  font-size: 6rem;
+  color: maroon;
+  text-align: center;
+  grid-column: 1/-1;
+}
+
+img {
+  height: 200px;
+}
+
+.pictures {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  justify-items: center;
+  gap: 50px;
+}
