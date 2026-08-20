@@ -1,43 +1,120 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>BD Webpage</title>
-    <link
-      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
-      rel="stylesheet"
-      integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH"
-      crossorigin="anonymous"
-    />
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,100;1,200;1,300;1,400;1,500;1,600;1,700&family=Noto+Serif+Display:ital,wght@0,100..900;1,100..900&display=swap"
-      rel="stylesheet"
-    />
-    <link rel="stylesheet" href="./styes.css" />
-  </head>
-  <body>
-    <h1 class="py-5">Hello And Welcome To My Webpage</h1>
-
-    <div class="container">
-      <div class="d-flex flex-column flex-md-row py-5 justify-content-center">
-        <img src="./images/me.jpg" alt="Me" class="mx-5" />
-        <p class="blurb px-5">
-          My name is Benjamin Dickinson, and I am a web development student.
-          Thank you for visiting.
-        </p>
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Benjamin Dickinson's generative AI response evaluation portfolio project.">
+  <title>Benjamin Dickinson | AI Quality Portfolio</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <header class="hero">
+    <nav class="wrap nav" aria-label="Primary navigation">
+      <a class="brand" href="#top">Benjamin Dickinson</a>
+      <div class="nav-links">
+        <a href="#project">Project</a><a href="#examples">Examples</a><a href="#findings">Findings</a>
       </div>
-      <div class="d-flex justify-content-around py-5">
-        <a href="./about.html" class="btn btn-dark btn-lg">About Me</a>
-
-        <a href="./resume.html" class="btn btn-dark btn-lg">Resume</a>
-
-        <a href="./portfolio.html" class="btn btn-dark btn-lg">Portfolio</a>
-
-        <a href="./contact.html" class="btn btn-dark btn-lg">Contact</a>
+    </nav>
+    <div class="wrap hero-grid" id="top">
+      <div>
+        <p class="eyebrow">AI OPERATIONS &amp; QUALITY</p>
+        <h1>I find the errors hidden inside fluent AI answers.</h1>
+        <p class="lede">I evaluated ten generative-AI responses for accuracy, instruction-following, clarity, and completeness—then documented the failures and corrected the outputs.</p>
+        <div class="actions">
+          <a class="button primary" href="#examples">View evaluations</a>
+          <a class="button secondary" href="assets/portfolio-report.md" download>Download report</a>
+        </div>
       </div>
+      <aside class="profile-card" aria-label="Profile summary">
+        <p class="small-label">BACKGROUND</p>
+        <p>Orthopedic medical documentation, quality-sensitive workflows, online operations, HTML/CSS, and foundational Python and JavaScript.</p>
+        <p class="small-label">CREDENTIAL</p>
+        <p>Google AI Professional Certificate · March 2026</p>
+        <p class="small-label">TARGET ROLES</p>
+        <p>AI Operations · AI Evaluation · Data Quality · Content Quality</p>
+      </aside>
     </div>
-  </body>
+  </header>
+
+  <main>
+    <section class="wrap section" id="project">
+      <p class="eyebrow">THE PROJECT</p>
+      <h2>A repeatable evaluation process</h2>
+      <p class="section-intro">Each response was independently reviewed before feedback. Scores used a 1–5 scale and were supported by a written rationale and corrected response.</p>
+      <div class="rubric">
+        <article><span>01</span><h3>Accuracy</h3><p>Are the facts, calculations, and conclusions correct?</p></article>
+        <article><span>02</span><h3>Instruction-following</h3><p>Does the output satisfy every explicit requirement?</p></article>
+        <article><span>03</span><h3>Clarity</h3><p>Is the response readable, direct, and organized?</p></article>
+        <article><span>04</span><h3>Completeness</h3><p>Does it preserve all information needed to answer?</p></article>
+      </div>
+    </section>
+
+    <section class="examples section" id="examples">
+      <div class="wrap">
+        <p class="eyebrow">SELECTED EVALUATIONS</p>
+        <h2>Three errors that looked plausible at first</h2>
+
+        <article class="case">
+          <div class="case-number">02</div>
+          <div class="case-body">
+            <p class="tag">UNSUPPORTED INFERENCE</p>
+            <h3>“Does not work” became “broken”</h3>
+            <div class="comparison">
+              <div><h4>AI output</h4><p>“The lamp arrived with a <mark>broken power switch</mark>.”</p></div>
+              <div><h4>Source evidence</h4><p>“The power switch <mark>does not work</mark>.”</p></div>
+            </div>
+            <p class="finding"><strong>Finding:</strong> “Broken” supplies a diagnosis the customer never made. The safer extraction preserves the source wording: “Power switch does not work.”</p>
+          </div>
+        </article>
+
+        <article class="case">
+          <div class="case-number">04</div>
+          <div class="case-body">
+            <p class="tag">CALCULATION ERROR</p>
+            <h3>A two-cent mistake changed the total</h3>
+            <div class="comparison">
+              <div><h4>AI output</h4><p>$18.00 × 0.06 = <mark>$1.06</mark><br>Final total: $19.06</p></div>
+              <div><h4>Corrected output</h4><p>$18.00 × 0.06 = <mark>$1.08</mark><br>Final total: $19.08</p></div>
+            </div>
+            <p class="finding"><strong>Finding:</strong> The final addition was internally consistent, but it carried forward an incorrect tax calculation. Every stage must be checked.</p>
+          </div>
+        </article>
+
+        <article class="case">
+          <div class="case-number">07</div>
+          <div class="case-body">
+            <p class="tag">POLICY CONTRADICTION</p>
+            <h3>The summary invented benefits and reversed the policy</h3>
+            <div class="comparison">
+              <div><h4>AI output</h4><p>Included a <mark>14-day free trial</mark>, immediate cancellation, and a <mark>prorated refund</mark>.</p></div>
+              <div><h4>Actual policy</h4><p>No trial was stated. Cancellation takes effect after the billing period, with <mark>no partial-month refund</mark>.</p></div>
+            </div>
+            <p class="finding"><strong>Finding:</strong> The response mixed an unsupported addition with direct contradictions—dangerous in policy-facing content.</p>
+          </div>
+        </article>
+      </div>
+    </section>
+
+    <section class="wrap section" id="findings">
+      <p class="eyebrow">WHAT I FOUND</p>
+      <h2>Recurring failure patterns</h2>
+      <div class="findings-grid">
+        <article><h3>Unsupported specificity</h3><p>General source language became stronger, less defensible claims.</p></article>
+        <article><h3>Invented details</h3><p>Responses added features, remedies, or policy terms absent from evidence.</p></article>
+        <article><h3>Constraint failures</h3><p>Polished answers violated word limits or machine-readable syntax.</p></article>
+        <article><h3>Reasoning mistakes</h3><p>Calculation, timeline, sentiment, and version-status errors changed results.</p></article>
+      </div>
+      <div class="lesson">
+        <h3>What I learned</h3>
+        <p>Fluency is not evidence of quality. Reliable evaluation requires comparing every claim with its source, separating factual accuracy from completeness, testing measurable constraints, and validating technical formats with an explicit checklist.</p>
+      </div>
+      <div class="downloads">
+        <a href="assets/portfolio-report.md" download>Full portfolio report <span>↓</span></a>
+        <a href="assets/evaluation-scores.csv" download>Evaluation score sheet <span>↓</span></a>
+      </div>
+    </section>
+  </main>
+
+  <footer><div class="wrap"><strong>Benjamin Dickinson</strong><span>Baltimore, Maryland · AI Operations &amp; Quality Candidate</span></div></footer>
+</body>
 </html>

@@ -1,0 +1,11 @@
+Response,Test Type,Accuracy,Instruction Following,Clarity,Completeness,Primary Finding
+1,Constraint following,4,3,5,4,"All bullets exceeded the 10-word limit; one solution was omitted"
+2,Information extraction,5,5,5,4,"'Broken' overstated the customer's report that a switch did not work"
+3,Unsupported claims,2,3,5,4,"Invented waterproofing, padded straps, comfort, and intended uses"
+4,Numerical reasoning,3,5,5,5,"Tax was two cents low, producing an incorrect final total"
+5,Meaning preservation,4,3,5,5,"Invented a refund and future expedited shipping request"
+6,Sentiment classification,3,5,5,5,"Classified a predominantly negative message as neutral"
+7,Policy summarization,2,2,5,5,"Invented a trial and contradicted cancellation and refund terms"
+8,Structured JSON output,5,5,5,5,"Initial review missed invalid single quotes and trailing comma"
+9,Schedule consistency,3,3,5,4,"Confused the event time with the required early-arrival time"
+10,Version-status reasoning,2,2,5,5,"Mistook the newest beta for the latest stable release"
